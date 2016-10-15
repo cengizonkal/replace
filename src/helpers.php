@@ -9,10 +9,10 @@ if (!function_exists('replace')) {
 
     /**
      * @param $target
-     * @param array $obj
+     * @param array $map
      */
-    function replace(&$target, array $obj)
+    function replace(&$target, array $map)
     {
-
+        \Replace\Replace::replace($target, $map);
     }
 }

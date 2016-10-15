@@ -23,7 +23,7 @@ $map = ['a' => 'x', 'b' => 'y', 'c' => 'z'];
 
 echo '<pre>';
 var_dump($test);
-Replace::replace($test, $map);
+replace($test, $map); // Replace::replace($test, $map);
 var_dump($test);
 
 $t1 = 'a';
