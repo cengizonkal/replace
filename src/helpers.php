@@ -13,6 +13,6 @@ if (!function_exists('replace')) {
      */
     function replace(&$target, array $map)
     {
-        \Replace\Replace::replace($target, $map);
+        \Replace\Replace::recursive($target, $map);
     }
 }

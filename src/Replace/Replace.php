@@ -6,12 +6,12 @@ namespace Replace;
 
 class Replace
 {
-    public static function replace(&$target, array $map)
+    public static function recursive(&$target, array $map)
     {
         if (is_array($target)) {
             foreach ($target as $key => $item) {
                 if (is_array($item) || is_object($item)) {
-                    self::replace($target[$key], $map);
+                    self::recursive($target[$key], $map);
                 } elseif (isset($map[$item])) {
                     $target[$key] = $map[$item];
                 }
@@ -20,7 +20,7 @@ class Replace
             $values = get_object_vars($target);
             foreach ($values as $key => $item) {
                 if (is_array($item) || is_object($item)) {
-                    self::replace($target->{$key}, $map);
+                    self::recursive($target->{$key}, $map);
                 } elseif (isset($map[$item])) {
                     $target->{$key} = $map[$item];
                 }
