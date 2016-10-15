@@ -1,6 +1,7 @@
 {
   "name": "cengizonkal/replace",
   "description": "This is package to replace strings",
+  "license": "MIT",
   "authors": [
     {
       "name": "cengiz",
