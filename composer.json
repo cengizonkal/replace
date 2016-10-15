@@ -1,0 +1,19 @@
+{
+  "name": "cengizonkal/replace",
+  "description": "This is package to replace strings",
+  "authors": [
+    {
+      "name": "cengiz",
+      "email": "onkal.cengiz@gmail.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Replace\\": "src/Replace"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  }
+}
