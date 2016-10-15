@@ -10,21 +10,21 @@ class Test
     public $aArray;
 }
 
-$test = new Test();
+$t1 = new Test();
 $t2 = new Test();
 $t3 = new Test();
 
 $t2->aValue = 'c';
 $t2->aArray = ['a', 'b', 'c'];
 
-$test->aValue = 'a';
-$test->aArray = ['a', 'b', 'c', 'p' => ['a', 'b', $t2]];
+$t1->aValue = 'a';
+$t1->aArray = ['a', 'b', 'c', 'p' => ['a', 'b', $t2]];
 $map = ['a' => 'x', 'b' => 'y', 'c' => 'z'];
 
 echo '<pre>';
-var_dump($test);
-replace($test, $map); // Replace::replace($test, $map);
-var_dump($test);
+var_dump($t1);
+replace($t1, $map); // Replace::replace($test, $map);
+var_dump($t1);
 
 $t1 = 'a';
 Replace::replace($t1, $map);
