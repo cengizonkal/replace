@@ -17,8 +17,7 @@ PHP Recursive replace for any type of object
    $t1->aValue = 'c';
    $t1->aArray = ['a', 'b', 'c'];
    replace($t1, $map);
-   /**
-   object(Test)#3 (2) {
+   /** object(Test)#3 (2) {
      ["aValue"]=>
      string(1) "z"
      ["aArray"]=>
@@ -30,7 +29,6 @@ PHP Recursive replace for any type of object
        [2]=>
        string(1) "z"
      }
-   }
-   **/
+   } **/
    
 
