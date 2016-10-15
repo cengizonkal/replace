@@ -29,3 +29,9 @@ var_dump($t1);
 $t1 = 'a';
 Replace::replace($t1, $map);
 var_dump($t1);
+
+$t1 = new Test();
+$t1->aValue = 'c';
+$t1->aArray = ['a', 'b', 'c'];
+replace($t1, $map);
+var_dump($t1);
